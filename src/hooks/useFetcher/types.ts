@@ -1,6 +1,6 @@
 export interface IData {
-  data: unknown
-  error: unknown
+  data: any
+  error: any
   loading: boolean
 }
 
