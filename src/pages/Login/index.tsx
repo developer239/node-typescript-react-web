@@ -13,8 +13,7 @@ const LoginPage: FC<RouteComponentProps> = props => {
 
   const handleSubmit = async (values: IFormValues) =>
     loadData(async () => {
-      const targetPath =
-        path(['location', 'state', 'from', 'pathname'], props) || '/'
+      const targetPath = path(['location', 'state', 'from', 'pathname'], props) || '/'
       const response = await authApi.login(values)
       authContext.actions.login(response.data)
       props.history.push(targetPath)

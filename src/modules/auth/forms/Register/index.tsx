@@ -29,7 +29,7 @@ const LoginForm: FC<IProps> = props => (
           value={values.email}
           onChange={handleChange}
           onBlur={handleBlur}
-          error={touched.email ? errors.email : undefined}
+          error={touched.email && errors.email}
         />
         <TextInput
           id="password"
@@ -39,7 +39,7 @@ const LoginForm: FC<IProps> = props => (
           value={values.password}
           onChange={handleChange}
           onBlur={handleBlur}
-          error={touched.password ? errors.password : undefined}
+          error={touched.password && errors.password}
         />
         <Button className="primary" type="submit">
           {isSubmitting ? '...' : 'Submit'}

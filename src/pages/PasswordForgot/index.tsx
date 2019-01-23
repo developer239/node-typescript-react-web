@@ -13,9 +13,7 @@ const PasswordForgotPage: FC<RouteComponentProps> = () => {
   const handleSubmit = async (values: IFormValues) =>
     loadData(async () => {
       await authApi.passwordForgot(values)
-      flashContext.actions.showInfo(
-        `We sent password recovery link to ${values.email}`
-      )
+      flashContext.actions.showInfo(`We sent password recovery link to ${values.email}`)
     })
 
   return <PasswordForgot submit={handleSubmit} />

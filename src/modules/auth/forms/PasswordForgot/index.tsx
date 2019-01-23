@@ -29,7 +29,7 @@ const PasswordForgotForm: FC<IProps> = props => (
           value={values.email}
           onChange={handleChange}
           onBlur={handleBlur}
-          error={touched.email ? errors.email : undefined}
+          error={touched.email && errors.email}
         />
         <Button className="primary" type="submit" disabled={isSubmitting}>
           {isSubmitting ? '...' : 'Submit'}

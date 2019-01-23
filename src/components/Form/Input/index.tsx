@@ -3,7 +3,7 @@ import { FormikErrors } from 'formik'
 import Description from '../../Description'
 
 interface IProps extends InputHTMLAttributes<HTMLInputElement> {
-  error?: string | false | FormikErrors<any>
+  error?: FormikErrors<string | boolean>
   label?: string
   description?: string
 }

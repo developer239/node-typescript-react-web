@@ -29,7 +29,7 @@ const PasswordResetForm: FC<IProps> = props => (
           value={values.token}
           onChange={handleChange}
           onBlur={handleBlur}
-          error={touched.token ? errors.token : undefined}
+          error={touched.token && errors.token}
         />
         <TextInput
           id="password"
@@ -38,7 +38,7 @@ const PasswordResetForm: FC<IProps> = props => (
           value={values.password}
           onChange={handleChange}
           onBlur={handleBlur}
-          error={touched.password ? errors.password : undefined}
+          error={touched.password && errors.password}
         />
         <Button className="primary" type="submit" disabled={isSubmitting}>
           {isSubmitting ? '...' : 'Submit'}
