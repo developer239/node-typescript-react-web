@@ -45,7 +45,7 @@ const PasswordResetForm: FC<IProps> = props => (
         </Button>
         <br />
         <Link to="/login">
-          <button className="small">use existing account</button>
+          <Button className="small">use existing account</Button>
         </Link>
       </form>
     )}

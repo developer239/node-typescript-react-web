@@ -46,10 +46,10 @@ const LoginForm: FC<IProps> = props => (
         </Button>
         <br />
         <Link to="/register">
-          <button className="small">create account</button>
+          <Button className="small">create account</Button>
         </Link>
         <Link to="/password-forgot">
-          <button className="small">reset password</button>
+          <Button className="small">reset password</Button>
         </Link>
       </form>
     )}
