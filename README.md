@@ -4,6 +4,19 @@
 
 # Node Typescript React Web
 
-Demo application is running [here](https://node-typescript-api.herokuapp.com).
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-Backend API is running [here](https://node-typescript-api.herokuapp.com/). You can find the source code of the backend application [here](https://github.com/developer239/node-typescript-react-web).
+Demo application is running [here](https://node-typescript-react-web.herokuapp.com).
+
+📘 Backend API is running [here](https://node-typescript-api.herokuapp.com/). You can find the source code of the backend application [here](https://github.com/developer239/node-typescript-react-web).
+
+# Development
+
+System Dependencies:
+
+1. `brew install node`
+2. `brew install yarn`
+
+Run development server:
+
+1. `yarn start`

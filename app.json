@@ -1,0 +1,16 @@
+{
+  "name": "Node Typescript React Web",
+  "description": "React meets typescript",
+  "repository": "https://github.com/developer239/node-typescript-react-web",
+  "env": {
+    "REACT_APP_NODE_PATH": {
+      "value": "./"
+    },
+    "NODE_PATH": {
+      "value": "./"
+    },
+    "NODE_ENV": {
+      "value": "production"
+    }
+  }
+}
