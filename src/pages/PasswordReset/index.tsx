@@ -6,7 +6,7 @@ import AuthContext from 'src/modules/auth/context'
 import FLashMessagesContext from 'src/modules/flash/context'
 import useFetcher from 'src/hooks/useFetcher'
 import authApi from 'src/modules/auth/api'
-import { searchParams } from 'src/common'
+import { searchParams } from 'src/utils'
 
 const PasswordResetPage: FC<RouteComponentProps> = ({
   history: { push },

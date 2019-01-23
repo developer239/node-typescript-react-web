@@ -1,6 +1,6 @@
 import { AxiosError, AxiosRequestConfig } from 'axios'
 import { path } from 'ramda'
-import auth from 'src/services/auth'
+import authStorage from 'src/services/authStorage'
 import authApi from 'src/modules/auth/api'
 import config from 'src/config'
 import { history } from 'src'
@@ -14,8 +14,8 @@ export const prefixApiUrl = (requestConfig: AxiosRequestConfig) => {
 
 export const refreshAuthToken = async (error: AxiosError) => {
   const originalRequest = error.config as IExtendedAxiosConfig
-  const userId = path(['id'], auth.getUser()) as IUserId
-  const refreshToken = auth.getRefreshToken()
+  const userId = path(['id'], authStorage.getUser()) as IUserId
+  const refreshToken = authStorage.getRefreshToken()
 
   if (
     userId &&
@@ -28,7 +28,7 @@ export const refreshAuthToken = async (error: AxiosError) => {
       userId: parseInt(userId, 10),
       refreshToken,
     })
-    auth.setAccessToken(response.data.token)
+    authStorage.setAccessToken(response.data.token)
     return refreshTokenClient(originalRequest)
   }
 
@@ -47,7 +47,7 @@ export const errorHandler = async (error: AxiosError) => {
 }
 
 export const provideAuthToken = (requestConfig: AxiosRequestConfig) => {
-  const accessToken = auth.getAccessToken()
+  const accessToken = authStorage.getAccessToken()
   if (accessToken) {
     requestConfig.headers['authorization'] = `jwt ${accessToken}`
   }

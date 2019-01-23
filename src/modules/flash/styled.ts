@@ -17,12 +17,12 @@ export const Message = styled.div<{
   isInfo: boolean
 }>`
   width: 80%;
-  background-color: white;
-  padding: 16px 24px;
-  color: white;
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  color: #ffffff;
   opacity: 0.9;
-  margin-top: 20px;
-  border-radius: 2px;
+  margin-top: 1.25rem;
+  border-radius: 0.125rem;
   
   ${is('isSuccess')`
     background-color: #308732;

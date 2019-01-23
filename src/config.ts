@@ -1,11 +1,7 @@
-export interface IConfig {
-  server: {
-    url: string
-  }
-}
-
-export default {
+const config = {
   server: {
     url: 'https://node-typescript-api.herokuapp.com',
   },
-} as IConfig
+}
+
+export default config
