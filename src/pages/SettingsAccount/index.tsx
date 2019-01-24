@@ -4,7 +4,8 @@ import FLashMessagesContext from 'src/modules/flash/context'
 import useFetcher from 'src/hooks/useFetcher'
 import AuthContext from 'src/modules/auth/context'
 import SettingsMenu from 'src/components/SettingsMenu'
-import wait from 'src/common/wait'
+import { Row, Column } from 'src/components/Grid'
+import wait from 'src/utils/wait'
 
 const SettingsPage = () => {
   const flashContext = useContext(FLashMessagesContext)
@@ -18,17 +19,17 @@ const SettingsPage = () => {
     })
 
   return (
-    <div className="row">
-      <div className="col-md-3 col-sm-12">
+    <Row>
+      <Column md={3}>
         <SettingsMenu />
-      </div>
-      <div className="col-md-9 col-sm-12">
+      </Column>
+      <Column md={9}>
         <UserInfoForm
           user={authContext.state.user!}
           submit={handleSubmitUserInfo}
         />
-      </div>
-    </div>
+      </Column>
+    </Row>
   )
 }
 

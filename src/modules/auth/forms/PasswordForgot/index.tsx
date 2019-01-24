@@ -29,14 +29,14 @@ const PasswordForgotForm: FC<IProps> = props => (
           value={values.email}
           onChange={handleChange}
           onBlur={handleBlur}
-          error={touched.email ? errors.email : undefined}
+          error={touched.email && errors.email}
         />
         <Button className="primary" type="submit" disabled={isSubmitting}>
           {isSubmitting ? '...' : 'Submit'}
         </Button>
         <br />
         <Link to="/login">
-          <button className="small">use existing account</button>
+          <Button className="small">use existing account</Button>
         </Link>
       </form>
     )}

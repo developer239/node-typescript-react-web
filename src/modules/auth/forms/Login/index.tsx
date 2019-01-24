@@ -29,7 +29,7 @@ const LoginForm: FC<IProps> = props => (
           value={values.email}
           onChange={handleChange}
           onBlur={handleBlur}
-          error={touched.email ? errors.email : undefined}
+          error={touched.email && errors.email}
         />
         <TextInput
           id="password"
@@ -39,17 +39,17 @@ const LoginForm: FC<IProps> = props => (
           value={values.password}
           onChange={handleChange}
           onBlur={handleBlur}
-          error={touched.password ? errors.password : undefined}
+          error={touched.password && errors.password}
         />
         <Button className="primary" type="submit" disabled={isSubmitting}>
           {isSubmitting ? '...' : 'Submit'}
         </Button>
         <br />
         <Link to="/register">
-          <button className="small">create account</button>
+          <Button className="small">create account</Button>
         </Link>
         <Link to="/password-forgot">
-          <button className="small">reset password</button>
+          <Button className="small">reset password</Button>
         </Link>
       </form>
     )}

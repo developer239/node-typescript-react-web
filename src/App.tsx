@@ -1,21 +1,19 @@
 import React from 'react'
-import styled from 'styled-components'
 import FlashMessages from 'src/modules/flash'
+import Layout from 'src/components/Layout'
 import Header from 'src/components/Header'
 import Footer from 'src/components/Footer'
+import Loader from 'src/components/Loader'
 import Router from 'src/Router'
-
-const Layout = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-`
+import Suspense from 'src/experimental/Suspense'
 
 const App = () => (
   <Layout>
     <FlashMessages />
     <Header />
-    <Router />
+    <Suspense fallback={<Loader />}>
+      <Router />
+    </Suspense>
     <Footer />
   </Layout>
 )

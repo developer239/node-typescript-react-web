@@ -1,9 +1,10 @@
 import React, { FunctionComponent, InputHTMLAttributes } from 'react'
 import { FormikErrors } from 'formik'
+import { Row, Column } from '../../Grid'
 import Description from '../../Description'
 
 interface IProps extends InputHTMLAttributes<HTMLInputElement> {
-  error?: string | false | FormikErrors<any>
+  error?: FormikErrors<string | boolean>
   label?: string
   description?: string
 }
@@ -15,17 +16,17 @@ const TextInput: FunctionComponent<IProps> = ({
   ...inputProps
 }) => (
   <div>
-    <div className="row responsive-label">
+    <Row>
       {label && (
-        <div className="col-sm-12 col-md-2">
+        <Column md={2}>
           <label htmlFor={inputProps.id}>{label}</label>
-        </div>
+        </Column>
       )}
-      <div className="col-sm-12 col-md">
+      <Column md={10}>
         <input {...inputProps} autoComplete="off" />
         {error && <span>{error}</span>}
-      </div>
-    </div>
+      </Column>
+    </Row>
     {description && <Description>{description}</Description>}
   </div>
 )

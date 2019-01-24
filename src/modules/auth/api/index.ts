@@ -1,4 +1,4 @@
-import { publicApiClient, authorizedApiClient } from 'src/services/api/client'
+import { publicApiClient } from 'src/services/api/client'
 import { ILoginData } from '../context/types'
 
 export const refreshToken = (data: { refreshToken: string; userId: number }) =>

@@ -10,13 +10,13 @@ const useFetcher = (): IReturnData => {
   const [data, setData] = useState<IData>({
     data: null,
     error: null,
-    loading: false,
+    loading: true,
   })
 
   const loadData = async (callback: ILoadDataCallback) => {
     try {
       setData({ ...data, loading: true })
-      await callback((data: any) =>
+      await callback((data: IData) =>
         setData({ loading: false, error: null, data })
       )
     } catch (error) {

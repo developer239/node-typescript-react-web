@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState, createContext } from 'react'
 import { filter } from 'ramda'
-import { nanoid, noop } from 'src/common'
+import { nanoid, noop } from 'src/utils'
 import { IFlashMessage, IProps, InitialValues } from './types'
 
 const FLashMessagesContext = createContext<InitialValues>({
