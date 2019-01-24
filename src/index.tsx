@@ -12,15 +12,15 @@ const $root = document.getElementById('root')
 export const history = createBrowserHistory()
 
 const renderApp = (Component: ComponentType) => {
-  ReactDOM.render(
+  // @ts-ignore
+  ReactDOM.createRoot($root).render(
     <Router history={history}>
       <AuthProvider>
         <FlashMessagesProvider>
           <Component />
         </FlashMessagesProvider>
       </AuthProvider>
-    </Router>,
-    $root
+    </Router>
   )
 }
 
