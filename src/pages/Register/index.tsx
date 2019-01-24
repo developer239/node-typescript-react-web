@@ -8,14 +8,15 @@ import authApi from 'src/modules/auth/api'
 
 const RegisterPage: FC<RouteComponentProps> = props => {
   const authContext = useContext(AuthContext)
-  const [loadData] = useFetcher()
+  const [postData] = useFetcher()
 
-  const handleSubmit = async (values: IFormValues) =>
-    loadData(async () => {
-      const response = await authApi.register(values)
+  const handleSubmit = async (values: IFormValues) => {
+    const response = await postData(authApi.register, values)
+    if (!response.error) {
       authContext.actions.login(response.data)
       props.history.push('/')
-    })
+    }
+  }
 
   return <RegisterForm submit={handleSubmit} />
 }
