@@ -41,7 +41,7 @@ const LoginForm: FC<IProps> = props => (
           onBlur={handleBlur}
           error={touched.password && errors.password}
         />
-        <Button className="primary" type="submit">
+        <Button className="primary" type="submit" disabled={isSubmitting}>
           {isSubmitting ? '...' : 'Submit'}
         </Button>
         <br />

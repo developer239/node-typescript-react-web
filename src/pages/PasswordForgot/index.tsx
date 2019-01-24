@@ -8,13 +8,16 @@ import authApi from 'src/modules/auth/api'
 
 const PasswordForgotPage: FC<RouteComponentProps> = () => {
   const flashContext = useContext(FLashMessagesContext)
-  const [loadData] = useFetcher()
+  const [postData] = useFetcher()
 
-  const handleSubmit = async (values: IFormValues) =>
-    loadData(async () => {
-      await authApi.passwordForgot(values)
-      flashContext.actions.showInfo(`We sent password recovery link to ${values.email}`)
-    })
+  const handleSubmit = async (values: IFormValues) => {
+    const response = await postData(authApi.passwordForgot, values)
+    if (!response.error) {
+      flashContext.actions.showInfo(
+        `We sent password recovery link to ${values.email}`
+      )
+    }
+  }
 
   return <PasswordForgot submit={handleSubmit} />
 }

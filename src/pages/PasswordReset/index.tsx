@@ -14,7 +14,7 @@ const PasswordResetPage: FC<RouteComponentProps> = ({
 }) => {
   const authContext = useContext(AuthContext)
   const flashContext = useContext(FLashMessagesContext)
-  const [loadData] = useFetcher()
+  const [postData] = useFetcher()
 
   const token = searchParams('token', search)
 
@@ -24,14 +24,15 @@ const PasswordResetPage: FC<RouteComponentProps> = ({
     }
   }, [])
 
-  const handleSubmit = async (values: IFormValues) =>
-    loadData(async () => {
-      const response = await authApi.passwordReset(values)
+  const handleSubmit = async (values: IFormValues) => {
+    const response = await postData(authApi.passwordReset, values)
+    if (!response.error) {
       authContext.actions.login(response.data)
       flashContext.actions.showSuccess('Password was successfully reset.')
       flashContext.actions.showInfo('You are now logged in.')
       push('/')
-    })
+    }
+  }
 
   if (!token) {
     return null

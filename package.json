@@ -9,14 +9,13 @@
     "lint:ts:fix": "tslint './src/**/*.{ts,tsx}' --fix",
     "lint:css": "node node_modules/.bin/stylelint ./src",
     "prettier": "prettier --write './src/**/*.{ts,tsx}'",
-    "prod": "node node_modules/.bin/http-server build",
+    "prod": "node node_modules/.bin/serve -s build",
     "precommit": "lint-staged",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "axios": "0.18.0",
     "formik": "1.3.2",
-    "http-server": "0.11.1",
     "js-cookie": "2.2.0",
     "nanoid": "2.0.0",
     "ramda": "0.26.1",
@@ -25,7 +24,7 @@
     "react-dom": "16.7.0-alpha.2",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.3",
-    "serve": "10.1.1",
+    "serve": "^10.1.1",
     "styled-components": "4.1.2",
     "styled-is": "1.1.5",
     "yup": "0.26.6"
