@@ -11,7 +11,10 @@ const LogoutRoute: FunctionComponent<RouteProps> = routeProps => {
   }, [])
 
   return (
-    <Route {...routeProps} render={() => <Redirect to={{ pathname: '/' }} />} />
+    <Route
+      {...routeProps}
+      render={() => <Redirect to={{ pathname: '/login' }} />}
+    />
   )
 }
 

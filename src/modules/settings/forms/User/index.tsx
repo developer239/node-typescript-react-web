@@ -17,10 +17,12 @@ const UserAddressForm: FC<IProps> = props => (
       handleBlur,
       handleSubmit,
       isSubmitting,
-    }: FormikProps<IFormValues>)  => (
+    }: FormikProps<IFormValues>) => (
       <form onSubmit={handleSubmit}>
         <h2>User Info</h2>
         <TextInput
+          id="email"
+          type="email"
           label="Email"
           placeholder="Email"
           value={props.user.email}
