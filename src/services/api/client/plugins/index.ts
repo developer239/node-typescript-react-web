@@ -36,7 +36,10 @@ export const refreshAuthToken = async (error: AxiosError) => {
 }
 
 export const errorHandler = async (error: AxiosError) => {
-  if (error.response!.status === 401) {
+  if (
+    error.response!.status === 401 &&
+    !error.response!.config.url!.includes('/session/user')
+  ) {
     // https://github.com/jaredpalmer/formik/issues/597#issuecomment-400092105
     setImmediate(() => {
       history.push('/logout')
