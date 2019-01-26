@@ -6,7 +6,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint:ts": "tslint './src/**/*.{ts,tsx}'",
-    "lint:ts:fix": "tslint './src/**/*.{ts,tsx}' --fix",
+    "lint:ts:fix": "node_modules/.bin/tslint './src/**/*.{ts,tsx}' --fix",
     "lint:css": "node node_modules/.bin/stylelint ./src",
     "prettier": "prettier --write './src/**/*.{ts,tsx}'",
     "prod": "node node_modules/.bin/serve -s build",

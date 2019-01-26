@@ -3,8 +3,10 @@ const submitEmptyForm = () => {
 }
 
 const submitFilledForm = () => {
-  cy.get('#email').type('test@emai.com')
-  cy.get('button[type=submit]').click()
+  cy.fixture('user').then((user) => {
+    cy.get('#email').type(user.email)
+    cy.get('button[type=submit]').click()
+  })
 }
 
 module.exports = {

@@ -3,8 +3,10 @@ const submitEmptyForm = () => {
 }
 
 const submitFilledForm = () => {
-  cy.get('#password').type('newPassword')
-  cy.get('button[type=submit]').click()
+  cy.fixture('user').then((user) => {
+    cy.get('#password').type(user.password)
+    cy.get('button[type=submit]').click()
+  })
 }
 
 module.exports = {
