@@ -17,11 +17,11 @@ export const AuthProvider: FC<IProps> = ({ children }) => {
   const initialUserState = auth.getUser()
   const [user, setUser] = useState<IUser | null>(initialUserState)
 
-  const login = ({ refreshToken, accessToken, ...user }: ILoginData) => {
+  const login = ({ refreshToken, accessToken, ...userData }: ILoginData) => {
     auth.setAccessToken(accessToken)
     auth.setRefreshToken(refreshToken)
-    auth.setUser(user)
-    setUser(user)
+    auth.setUser(userData)
+    setUser(userData)
   }
 
   const logout = () => {

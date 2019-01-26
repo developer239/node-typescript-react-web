@@ -52,7 +52,7 @@ export const errorHandler = async (error: AxiosError) => {
 export const provideAuthToken = (requestConfig: AxiosRequestConfig) => {
   const accessToken = authStorage.getAccessToken()
   if (accessToken) {
-    requestConfig.headers['authorization'] = `jwt ${accessToken}`
+    requestConfig.headers.authorization = `jwt ${accessToken}`
   }
   return requestConfig
 }

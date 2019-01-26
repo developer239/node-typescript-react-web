@@ -1,4 +1,4 @@
-export type IFetcherState = {
+export interface IFetcherState {
   isLoading: boolean
 }
 

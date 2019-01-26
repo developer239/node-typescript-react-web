@@ -17,21 +17,21 @@ export const Message = styled.div<{
   isInfo: boolean
 }>`
   width: 80%;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 1rem 1.5rem;
-  color: #ffffff;
+  color: #fff;
   opacity: 0.9;
   margin-top: 1.25rem;
   border-radius: 0.125rem;
-  
+
   ${is('isSuccess')`
     background-color: #308732;
   `}
-  
+
   ${is('isError')`
     background-color: #d32f2f;
   `}
-  
+
   ${is('isInfo')`
     background-color: #1565c0;
   `}
