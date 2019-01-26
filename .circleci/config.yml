@@ -6,7 +6,6 @@ jobs:
         environment:
           REACT_APP_NODE_PATH: ./
           NODE_PATH: ./
-          REACT_APP_SERVER_URL: http://localhost:3000
     steps:
       - checkout
       - restore_cache:
