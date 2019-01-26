@@ -2,7 +2,7 @@ const mockRoute = require('../support/utils/server')
 const { logUserIn } = require('../support/utils/auth')
 
 describe('logout page', function () {
-  it('should logout user unauthorized users', function () {
+  it('should logout user', function () {
     logUserIn()
 
     cy.server()

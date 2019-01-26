@@ -69,7 +69,7 @@ const mockRouter = (url, status, method, config) => cond([
     },
   }),
   mockRoute('/session/password-reset', 404, 'POST')({
-    message: 'Password reset token is not valid.',
+    message: 'Password Reset Token Not Found',
   }),
 
   // POST /session/token

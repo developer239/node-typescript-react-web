@@ -17,10 +17,10 @@ describe('password forgot page', function () {
     cy.visit('/password-reset?token=someFakeToken')
 
     cy.server()
-    mockRoute('/session/password-reset', 400, 'POST')
+    mockRoute('/session/password-reset', 404, 'POST')
 
     passwordResetForm.submitFilledForm()
-    cy.contains('Password reset token is not valid.')
+    cy.contains('Password Reset Token Not Found')
   })
 
   it('should reset password and log user in', function () {

@@ -1,7 +1,7 @@
 const mockRoute = require('../support/utils/server')
 const { logUserIn } = require('../support/utils/auth')
 
-describe('home page', function () {
+describe('account settings page', function () {
   it('should handle unauthorized users', function () {
     cy.visit('/settings/account')
     cy.url().should('eq', Cypress.config().baseUrl + '/login')
