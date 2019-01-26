@@ -21,3 +21,8 @@ System Dependencies:
 Run development server:
 
 1. `yarn start`
+
+## Useful Commands
+
+- `yarn cypress:open` open cypress UI for e2e tests
+- `yarn cypress:run` run e2e tests in console
