@@ -4,7 +4,7 @@
 
 # Node Typescript React Web
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![Greenkeeper badge](https://badges.greenkeeper.io/developer239/node-typescript-react-web.svg)](https://greenkeeper.io/)
 
 Demo application is running [here](https://node-typescript-react-web.herokuapp.com).
 
