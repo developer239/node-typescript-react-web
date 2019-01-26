@@ -1,0 +1,6 @@
+{
+  "email": "test@emai.com",
+  "password": "somePassword",
+  "refreshToken": "refreshToken",
+  "accessToken": "accessToken"
+}
