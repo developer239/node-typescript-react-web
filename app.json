@@ -11,6 +11,9 @@
     },
     "NODE_ENV": {
       "value": "production"
+    },
+    "REACT_APP_SERVER_URL": {
+      "value": "https://node-typescript-api.herokuapp.com"
     }
   }
 }
