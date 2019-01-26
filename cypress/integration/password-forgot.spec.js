@@ -13,14 +13,16 @@ describe('password forgot page', function () {
 
   it('should handle errors', function () {
     cy.server()
-    mockRoute('/session/password-forgot', 404)
+    mockRoute('/session/password-forgot', 404, 'POST')
+
     passwordForgotForm.submitFilledForm()
     cy.contains('User does not exist')
   })
 
   it('should trigger password reset', function () {
     cy.server()
-    mockRoute('/session/password-forgot', 200)
+    mockRoute('/session/password-forgot', 200, 'POST')
+
     passwordForgotForm.submitFilledForm()
     cy.contains('We sent password recovery link to test@emai.com')
   })

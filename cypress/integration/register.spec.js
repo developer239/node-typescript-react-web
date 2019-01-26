@@ -14,14 +14,16 @@ describe('register page', function () {
 
   it('should handle errors', function () {
     cy.server()
-    mockRoute('/users', 409)
+    mockRoute('/users', 409, 'POST')
+
     registerForm.submitFilledForm()
     cy.contains('User already exists.')
   })
 
   it('should create new user and log in', function () {
     cy.server()
-    mockRoute('/users', 200)
+    mockRoute('/users', 200, 'POST')
+
     registerForm.submitFilledForm()
     cy.url().should('eq', Cypress.config().baseUrl + '/')
   })

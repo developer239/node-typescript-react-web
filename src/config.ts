@@ -1,6 +1,6 @@
 const config = {
   server: {
-    url: 'https://node-typescript-api.herokuapp.com',
+    url: process.env.REACT_APP_SERVER_URL || 'http://localhost:8080',
   },
 }
 

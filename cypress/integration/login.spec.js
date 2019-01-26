@@ -14,7 +14,7 @@ describe('login page', function () {
 
   it('should handle invalid credentials', function () {
     cy.server()
-    mockRoute('/session/user', 401)
+    mockRoute('/session/user', 401, 'POST')
 
     loginForm.submitFilledForm()
     cy.contains('Invalid credentials')
@@ -22,8 +22,8 @@ describe('login page', function () {
 
   it('should handle valid credentials', function () {
     cy.server()
-    mockRoute('/secured', 200)
-    mockRoute('/session/user', 200)
+    mockRoute('/secured', 200, 'POST')
+    mockRoute('/session/user', 200, 'POST')
 
     loginForm.submitFilledForm()
     cy.url().should('eq', Cypress.config().baseUrl + '/')
