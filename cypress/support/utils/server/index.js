@@ -5,12 +5,13 @@ const switchHelper = (actualUrl, actualStatus, actualMethod) =>
     url === actualUrl && status === actualStatus && method === actualMethod
 
 const mockResponse = response =>
-  ({ url, status, method }) => {
+  ({ url, status, method, config }) => {
     cy.route({
       method,
       url,
       status,
       response,
+      ...config,
     })
   }
 
@@ -19,11 +20,14 @@ const mockRoute = (url, status, method) => response => [
   mockResponse(response)
 ]
 
-const mockRouter = (url, status, method) => cond([
+const mockRouter = (url, status, method, config) => cond([
 
   // Welcome Controller
   mockRoute('/secured', 200, 'GET')({
     message: 'Node Typescript API 🌍 [secured resource]'
+  }),
+  mockRoute('/secured', 401, 'GET')({
+    message: 'Invalid credentials'
   }),
 
   // Users Controller
@@ -68,10 +72,19 @@ const mockRouter = (url, status, method) => cond([
     message: 'Password reset token is not valid.',
   }),
 
+  // POST /session/token
+  mockRoute('/session/token', 200, 'POST')({
+    token: 'newToken',
+  }),
+  mockRoute('/session/token', 401, 'POST')({
+    message: 'Invalid credentials',
+  }),
+
 ])({
   url,
   status,
-  method
+  method,
+  config,
 })
 
 module.exports = mockRouter
