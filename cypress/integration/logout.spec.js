@@ -6,7 +6,7 @@ describe('logout page', function () {
     logUserIn()
 
     cy.server()
-    mockRoute('/secured', 200)
+    mockRoute('/secured', 200, 'POST')
 
     cy.visit('/logout')
     cy.url().should('eq', Cypress.config().baseUrl + '/login')

@@ -9,8 +9,10 @@ describe('home page', function () {
 
   it('should display user info', function () {
     logUserIn()
+
     cy.server()
-    mockRoute('/secured', 200)
+    mockRoute('/secured', 200, 'GET')
+
     cy.visit('/settings/account')
     cy.get('#email').should('have.value', 'test@email.com')
   })

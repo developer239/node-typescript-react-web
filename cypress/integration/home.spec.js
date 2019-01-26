@@ -11,7 +11,7 @@ describe('home page', function () {
     logUserIn()
 
     cy.server()
-    mockRoute('/secured', 200)
+    mockRoute('/secured', 200, 'GET')
 
     cy.visit('/')
     cy.contains('Node Typescript API 🌍 [secured resource]')
