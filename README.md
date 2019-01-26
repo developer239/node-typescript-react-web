@@ -1,5 +1,6 @@
 [![CircleCI](https://circleci.com/gh/developer239/node-typescript-react-web.svg?style=svg)](https://circleci.com/gh/developer239/node-typescript-react-web)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6d7b91d3589966a95878/maintainability)](https://codeclimate.com/github/developer239/node-typescript-react-web/maintainability)
+[![Greenkeeper badge](https://badges.greenkeeper.io/developer239/node-typescript-react-web.svg)](https://greenkeeper.io/)
 [![TypeScript](https://badges.frapsoft.com/typescript/version/typescript-next.svg?v=101)](https://www.typescriptlang.org/)
 
 # Node Typescript React Web
@@ -20,3 +21,8 @@ System Dependencies:
 Run development server:
 
 1. `yarn start`
+
+## Useful Commands
+
+- `yarn cypress:open` open cypress UI for e2e tests
+- `yarn cypress:run` run e2e tests in console
