@@ -9,7 +9,7 @@
 
 Demo application is running [here](https://node-typescript-react-web.herokuapp.com).
 
-📘 Backend API is running [here](https://node-typescript-api.herokuapp.com/). You can find the source code of the backend application [here](https://github.com/developer239/node-typescript-react-web).
+📘 Backend API is running [here](https://node-typescript-api.herokuapp.com/). You can find the source code of the backend application [here](https://github.com/developer239/node-typescript-api).
 
 # Development
 
