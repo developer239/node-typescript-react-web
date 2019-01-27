@@ -35,6 +35,7 @@ const PasswordResetForm: FC<IProps> = props => (
           id="password"
           label="New Password"
           placeholder="New Password"
+          type="password"
           value={values.password}
           onChange={handleChange}
           onBlur={handleBlur}

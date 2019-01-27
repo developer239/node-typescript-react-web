@@ -1,7 +1,7 @@
 const passwordResetForm = require('../support/utils/forms/passwordReset')
 const mockRoute = require('../support/utils/server')
 
-describe('password forgot page', function () {
+describe('password reset page', function () {
   it('should handle missing token', function () {
     cy.visit('/password-reset')
     cy.contains('Invalid password reset token.')

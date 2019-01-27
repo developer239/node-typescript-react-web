@@ -6,10 +6,12 @@ describe('login page', function () {
     cy.visit('/login')
   })
 
-  it('should display form validation errors', function () {
+  it('should handle empty login form', function () {
+    cy.server()
+    mockRoute('/session/user', 401, 'POST')
+
     loginForm.submitEmptyForm()
-    cy.contains('email is a required field')
-    cy.contains('password is a required field')
+    cy.contains('Invalid credentials')
   })
 
   it('should handle invalid credentials', function () {

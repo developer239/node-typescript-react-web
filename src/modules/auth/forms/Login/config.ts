@@ -2,16 +2,7 @@ import { FormikActions } from 'formik'
 import * as Yup from 'yup'
 import { IProps, IFormValues } from './types'
 
-export const validationSchema = Yup.object().shape({
-  email: Yup.string()
-    .email()
-    .max(80)
-    .required(),
-  password: Yup.string()
-    .min(5)
-    .max(80)
-    .required(),
-})
+export const validationSchema = Yup.object().shape({})
 
 export const onSubmit = (props: IProps) => async (
   values: IFormValues,
