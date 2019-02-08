@@ -1260,10 +1260,10 @@
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.13.6.tgz#128d1685a7c34d31ed17010fc87d6a12c1de6976"
   integrity sha512-5Th3OsZ4gTRdr9Mho83BQ23cex4sRhOR4XTG+m+cJc0FhtUBK9Vn62hBJ+pnQYnSxoPOsKoAPOx6FcphxBC8ng==
 
-"@types/yup@0.26.8":
-  version "0.26.8"
-  resolved "https://registry.yarnpkg.com/@types/yup/-/yup-0.26.8.tgz#a91acee108bfd240959f338f4ffca228d63f29cf"
-  integrity sha512-VUA9+CPmmMS6IYXz/zKZ3t1+WC5I5Dyeqx7oTKNuDQC9mxOT2Bj40u8pyb+ggktageHnV7KVtSiLfQMREvCP1w==
+"@types/yup@0.26.9":
+  version "0.26.9"
+  resolved "https://registry.yarnpkg.com/@types/yup/-/yup-0.26.9.tgz#8a619ac4d2b8dcacb0d81345746018303b479919"
+  integrity sha512-C7HdLLs1ZNPbYeNsSX++fMosxWAwzVeUs9wc76XlKJrKvLEyNwXMDUjag75EVAPxlZ36YiRJ6iTy4zc5Dbtndw==
 
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
