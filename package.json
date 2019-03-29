@@ -36,7 +36,7 @@
   "devDependencies": {
     "@types/axios": "0.14.0",
     "@types/jquery": "3.3.29",
-    "@types/js-cookie": "2.2.1",
+    "@types/js-cookie": "2.2.2",
     "@types/nanoid": "1.2.1",
     "@types/node": "11.11.3",
     "@types/ramda": "0.26.3",
