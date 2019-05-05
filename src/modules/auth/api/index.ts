@@ -1,4 +1,4 @@
-import { publicApiClient } from 'src/services/api/client'
+import { publicApiClient } from 'services/api/client'
 import { ILoginData } from '../context/types'
 
 export const refreshToken = (data: { refreshToken: string; userId: number }) =>
@@ -7,10 +7,8 @@ export const refreshToken = (data: { refreshToken: string; userId: number }) =>
 export const login = (data: { email: string; password: string }) =>
   publicApiClient.post<ILoginData>('session/user', data)
 
-export const register = (data: {
-  email: string
-  password: string
-}) => publicApiClient.post<ILoginData>('users', data)
+export const register = (data: { email: string; password: string }) =>
+  publicApiClient.post<ILoginData>('users', data)
 
 export const passwordForgot = (data: { email: string }) =>
   publicApiClient.post<ILoginData>('session/password-forgot', data)

@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import { Formik, FormikProps } from 'formik'
 import { Link } from 'react-router-dom'
-import TextInput from 'src/components/Form/Input'
-import Button from 'src/components/Button'
+import TextInput from 'components/Form/Input'
+import Button from 'components/Button'
 import { IProps, IFormValues } from './types'
 import { validationSchema, onSubmit, initialValues } from './config'
 

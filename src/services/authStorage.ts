@@ -1,5 +1,5 @@
 import Cookie from 'js-cookie'
-import { IUser } from 'src/modules/auth/context/types'
+import { IUser } from 'modules/auth/context/types'
 
 enum STORAGE {
   ACCESS_TOKEN = 'accessToken',

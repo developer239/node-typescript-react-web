@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import mediaQueries from 'src/mediaQueries'
+import mediaQueries from 'mediaQueries'
 
 export const Row = styled.div`
   display: flex;

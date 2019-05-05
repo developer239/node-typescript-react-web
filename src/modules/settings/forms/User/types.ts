@@ -1,4 +1,4 @@
-import { IUser } from 'src/modules/auth/context/types'
+import { IUser } from 'modules/auth/context/types'
 
 export interface IFormValues {}
 

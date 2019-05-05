@@ -1,10 +1,10 @@
 import React, { FC, useContext } from 'react'
 import { RouteComponentProps } from 'react-router-dom'
-import PasswordForgot from 'src/modules/auth/forms/PasswordForgot'
-import { IFormValues } from 'src/modules/auth/forms/PasswordForgot/types'
-import FLashMessagesContext from 'src/modules/flash/context'
-import useFetcher from 'src/hooks/useFetcher'
-import authApi from 'src/modules/auth/api'
+import PasswordForgot from 'modules/auth/forms/PasswordForgot'
+import { IFormValues } from 'modules/auth/forms/PasswordForgot/types'
+import FLashMessagesContext from 'modules/flash/context'
+import useFetcher from 'hooks/useFetcher'
+import authApi from 'modules/auth/api'
 
 const PasswordForgotPage: FC<RouteComponentProps> = () => {
   const flashContext = useContext(FLashMessagesContext)

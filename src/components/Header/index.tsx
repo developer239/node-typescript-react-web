@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import AuthContext from 'src/modules/auth/context'
+import AuthContext from 'modules/auth/context'
 import { Link } from 'react-router-dom'
 
 const Header = () => {

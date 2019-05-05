@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import FlashMessagesContext from 'src/modules/flash/context'
+import FlashMessagesContext from 'modules/flash/context'
 import { IFetcherState, IReturnData } from './types'
 
 const useFetcher = (): IReturnData => {

@@ -2,9 +2,9 @@ import React, { ComponentType } from 'react'
 import ReactDOM from 'react-dom'
 import { Router } from 'react-router-dom'
 import createBrowserHistory from 'history/createBrowserHistory'
-import App from 'src/App'
-import { FlashMessagesProvider } from 'src/modules/flash/context'
-import { AuthProvider } from 'src/modules/auth/context'
+import App from 'App'
+import { FlashMessagesProvider } from 'modules/flash/context'
+import { AuthProvider } from 'modules/auth/context'
 import './styles.css'
 
 const $root = document.getElementById('root')
@@ -27,8 +27,8 @@ const renderApp = (Component: ComponentType) => {
 renderApp(App)
 
 if (module.hot) {
-  module.hot.accept('src/App', () => {
-    const NextApp = require('src/App').default
+  module.hot.accept('App', () => {
+    const NextApp = require('App').default
     renderApp(NextApp)
   })
 }

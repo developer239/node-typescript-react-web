@@ -1,9 +1,9 @@
 import { AxiosError, AxiosRequestConfig } from 'axios'
 import { path } from 'ramda'
-import authStorage from 'src/services/authStorage'
-import authApi from 'src/modules/auth/api'
-import config from 'src/config'
-import { history } from 'src'
+import authStorage from 'services/authStorage'
+import authApi from 'modules/auth/api'
+import config from 'config'
+import { history } from '../../../../index'
 import { IExtendedAxiosConfig, IUserId } from './types'
 import { refreshTokenClient } from '../index'
 

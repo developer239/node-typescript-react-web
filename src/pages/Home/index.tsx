@@ -1,6 +1,6 @@
 import React from 'react'
-import ErrorBoundary from 'src/experimental/ErrorBoundary'
-import { requestSecuredResource } from 'src/modules/welcomeModule/cache'
+import ErrorBoundary from 'experimental/ErrorBoundary'
+import { requestSecuredResource } from 'modules/welcomeModule/cache'
 
 const Welcome = () => {
   const welcome = requestSecuredResource()

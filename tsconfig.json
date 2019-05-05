@@ -1,5 +1,4 @@
 {
-  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "es5",
     "allowJs": true,
@@ -14,7 +13,8 @@
     "noEmit": true,
     "jsx": "preserve",
     "lib": ["es2018", "dom"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": "src"
   },
   "include": ["src"]
 }

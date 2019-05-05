@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import UserInfoForm from 'src/modules/settings/forms/User'
-import FLashMessagesContext from 'src/modules/flash/context'
-import useFetcher from 'src/hooks/useFetcher'
-import AuthContext from 'src/modules/auth/context'
-import SettingsMenu from 'src/components/SettingsMenu'
-import { Row, Column } from 'src/components/Grid'
-import wait from 'src/utils/wait'
+import UserInfoForm from 'modules/settings/forms/User'
+import FLashMessagesContext from 'modules/flash/context'
+import useFetcher from 'hooks/useFetcher'
+import AuthContext from 'modules/auth/context'
+import SettingsMenu from 'components/SettingsMenu'
+import { Row, Column } from 'components/Grid'
+import wait from 'utils/wait'
 
 const SettingsPage = () => {
   const flashContext = useContext(FLashMessagesContext)

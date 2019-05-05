@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { Formik, FormikProps } from 'formik'
-import TextInput from 'src/components/Form/Input'
-import Button from 'src/components/Button'
+import TextInput from 'components/Form/Input'
+import Button from 'components/Button'
 import { IFormValues, IProps } from './types'
 import { initialValues, onSubmit } from './config'
 

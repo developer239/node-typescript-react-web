@@ -1,12 +1,12 @@
 import React, { FC, useContext, useEffect } from 'react'
 import { RouteComponentProps } from 'react-router-dom'
-import PasswordReset from 'src/modules/auth/forms/PasswordReset'
-import { IFormValues } from 'src/modules/auth/forms/PasswordReset/types'
-import AuthContext from 'src/modules/auth/context'
-import FLashMessagesContext from 'src/modules/flash/context'
-import useFetcher from 'src/hooks/useFetcher'
-import authApi from 'src/modules/auth/api'
-import { searchParams } from 'src/utils'
+import PasswordReset from 'modules/auth/forms/PasswordReset'
+import { IFormValues } from 'modules/auth/forms/PasswordReset/types'
+import AuthContext from 'modules/auth/context'
+import FLashMessagesContext from 'modules/flash/context'
+import useFetcher from 'hooks/useFetcher'
+import authApi from 'modules/auth/api'
+import { searchParams } from 'utils'
 
 const PasswordResetPage: FC<RouteComponentProps> = ({
   history: { push },

@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useContext, useEffect } from 'react'
 import { Route, Redirect, RouteProps } from 'react-router-dom'
-import AuthContext from 'src/modules/auth/context'
+import AuthContext from 'modules/auth/context'
 
 const LogoutRoute: FunctionComponent<RouteProps> = routeProps => {
   const {

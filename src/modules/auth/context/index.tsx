@@ -1,6 +1,6 @@
 import React, { FC, useState, createContext } from 'react'
-import { noop } from 'src/utils'
-import auth from 'src/services/authStorage'
+import { noop } from 'utils'
+import auth from 'services/authStorage'
 import { InitialContextState, IProps, ILoginData, IUser } from './types'
 
 const AuthContext = createContext<InitialContextState>({
