@@ -8,7 +8,7 @@ export interface ILoginData extends IUser {
   refreshToken: string
 }
 
-export interface InitialContextState {
+export interface IInitialContextState {
   actions: {
     login: (data: ILoginData) => void
     logout: () => void

@@ -1,11 +1,11 @@
 import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
 
-interface InnerProps {
+interface IInnerProps {
   links: Array<{ id: number; to: string; label: string }>
 }
 
-const Menu: FC<InnerProps> = ({ links }) => (
+const Menu: FC<IInnerProps> = ({ links }) => (
   <nav>
     {links.map(link => (
       <Link key={link.id} to={link.to}>

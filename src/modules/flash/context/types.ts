@@ -6,7 +6,7 @@ export interface IFlashMessage {
 
 export interface IProps {}
 
-export interface InitialValues {
+export interface IInitialValues {
   state: {
     messages: IFlashMessage[]
   }
