@@ -14,7 +14,7 @@
     "heroku-postbuild": "npm run build",
     "cypress:open": "node_modules/.bin/cypress open",
     "cypress:run": "node_modules/.bin/cypress run",
-    "cypress:ci": "yarn build && yarn prod -- -p 3000 & node_modules/.bin/wait-on http://localhost:3000 && yarn cypress:run"
+    "cypress:ci": "CI=false yarn build && yarn prod -- -p 3000 & node_modules/.bin/wait-on http://localhost:3000 && yarn cypress:run"
   },
   "dependencies": {
     "axios": "0.18.0",
