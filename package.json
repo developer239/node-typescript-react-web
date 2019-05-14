@@ -48,7 +48,7 @@
     "@types/webpack-env": "1.13.9",
     "@types/yup": "0.26.13",
     "cypress": "3.2.0",
-    "husky": "2.2.0",
+    "husky": "2.3.0",
     "lint-staged": "8.1.6",
     "prettier": "1.17.0",
     "stylelint": "10.0.1",
