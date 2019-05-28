@@ -1743,10 +1743,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.6.tgz#9c03d3fed70a8d517c191b7734da2879b50ca26c"
   integrity sha512-ZBFR7TROLVzCkswA3Fmqq+IIJt62/T7aY/Dmz+QkU7CaW2QFqAitCE8Ups7IzmGhcN1YWMBT4Qcoc07jU9hOJQ==
 
-"@types/ramda@0.26.8":
-  version "0.26.8"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.26.8.tgz#e002612cca52e52f9176d577f4d6229c8c72a10a"
-  integrity sha512-PSMkNNhB900U2xcyndlkVjJeCXpVtf1yod0Kdq/ArsLDIE0tW8pLBChmQeJs4o4dfp3AEP+AGm6zIseZPU4ndA==
+"@types/ramda@0.26.9":
+  version "0.26.9"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.26.9.tgz#f0bbba59c04de9d29aaa1d1c0daedefc7244bb68"
+  integrity sha512-yozsk6sXE29kP/mzLCgZ6RFSwx2pD41ZgW1m4rk3meKyj4mw77ISxnu5Knc1tLaKQd2ocdd7Y0daCG678olPfw==
 
 "@types/react-cache@2.0.1":
   version "2.0.1"
