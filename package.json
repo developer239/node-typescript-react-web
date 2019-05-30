@@ -17,7 +17,7 @@
     "cypress:ci": "CI=false yarn build && yarn prod -- -p 3000 & node_modules/.bin/wait-on http://localhost:3000 && yarn cypress:run"
   },
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "0.19.0",
     "formik": "1.5.5",
     "js-cookie": "2.2.0",
     "nanoid": "2.0.3",
