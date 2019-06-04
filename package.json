@@ -44,7 +44,7 @@
     "@types/react-cache": "2.0.1",
     "@types/react-dom": "16.0.11",
     "@types/react-router-dom": "4.3.3",
-    "@types/styled-components": "4.1.15",
+    "@types/styled-components": "4.1.16",
     "@types/webpack-env": "1.13.9",
     "@types/yup": "0.26.13",
     "cypress": "3.2.0",
