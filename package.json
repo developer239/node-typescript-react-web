@@ -46,7 +46,7 @@
     "@types/react-router-dom": "4.3.3",
     "@types/styled-components": "4.1.15",
     "@types/webpack-env": "1.13.9",
-    "@types/yup": "0.26.13",
+    "@types/yup": "0.26.14",
     "cypress": "3.2.0",
     "husky": "2.3.0",
     "lint-staged": "8.1.6",
