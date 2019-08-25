@@ -20,7 +20,7 @@
     "axios": "0.18.0",
     "formik": "1.5.5",
     "js-cookie": "2.2.0",
-    "nanoid": "2.0.3",
+    "nanoid": "2.0.4",
     "ramda": "0.26.1",
     "react": "^16.7.0-alpha.2",
     "react-cache": "2.0.0-alpha.1",
