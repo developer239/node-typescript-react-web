@@ -22,7 +22,7 @@
     "js-cookie": "2.2.0",
     "nanoid": "2.0.3",
     "ramda": "0.26.1",
-    "react": "^16.7.0-alpha.2",
+    "react": "16.7.0-alpha.2",
     "react-cache": "2.0.0-alpha.1",
     "react-dom": "16.7.0-alpha.2",
     "react-router-dom": "5.0.0",
