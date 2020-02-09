@@ -12,6 +12,10 @@ update_configs:
           dependency_name: "@types/react"
       - match:
           dependency_name: "@types/react-dom"
+      - match:
+          dependency_name: "react-cache"
+      - match:
+          dependency_name: "@types/react-cache"
     automerged_updates:
       - match:
           dependency_type: "all"

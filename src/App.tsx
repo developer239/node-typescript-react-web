@@ -1,18 +1,19 @@
-import React, { FC } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import React from 'react'
+import { FlashMessages } from 'modules/flash'
 import { Layout } from 'components/Layout'
-import { GlobalStyles } from 'styles/global'
-import { HomePage, HOME_ROUTE } from 'pages/Home'
-import { NotFoundPage, NOT_FOUND_ROUTE } from 'pages/NotFound'
+import { Header } from 'components/Header'
+import { Footer } from 'components/Footer'
+import { Loader } from 'components/Loader'
+import { Routes } from 'Routes'
+import { Suspense } from 'experimental/Suspense'
 
-const App: FC = () => (
+export const App = () => (
   <Layout>
-    <GlobalStyles />
-    <Switch>
-      <Route path={HOME_ROUTE} exact component={HomePage} />
-      <Route path={NOT_FOUND_ROUTE} component={NotFoundPage} />
-    </Switch>
+    <FlashMessages />
+    <Header />
+    <Suspense fallback={<Loader />}>
+      <Routes />
+    </Suspense>
+    <Footer />
   </Layout>
 )
-
-export { App }
