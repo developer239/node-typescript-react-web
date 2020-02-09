@@ -1,5 +1,9 @@
 import React from 'react'
 
-const NotFoundPage = () => <h1>Not Found 404</h1>
+export const NOT_FOUND_ROUTE = '*'
 
-export default NotFoundPage
+export const NOT_FOUND_TEST_ID = 'not-found-page'
+
+export const NotFoundPage = () => (
+  <div data-testid={NOT_FOUND_TEST_ID}>Not Found</div>
+)

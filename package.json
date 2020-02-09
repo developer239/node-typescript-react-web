@@ -1,87 +1,56 @@
 {
   "name": "node-typescript-react-web",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "dependencies": {
+    "@types/react-router-dom": "^5.1.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.1",
+    "sanitize.css": "^11.0.0",
+    "serve": "^11.3.0",
+    "styled-components": "^5.0.1",
+    "typescript": "~3.7.2"
+  },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint:ts": "tslint './src/**/*.{ts,tsx}'",
-    "lint:ts:fix": "node_modules/.bin/tslint './src/**/*.{ts,tsx}' --fix",
-    "lint:css": "node node_modules/.bin/stylelint ./src",
-    "prettier": "prettier --write './src/**/*.{ts,tsx}'",
-    "prod": "node node_modules/.bin/serve -s build",
-    "precommit": "lint-staged",
-    "heroku-postbuild": "npm run build",
+    "dev": "react-scripts start",
     "cypress:open": "node_modules/.bin/cypress open",
     "cypress:run": "node_modules/.bin/cypress run",
-    "cypress:ci": "CI=false yarn build && yarn prod -- -p 3000 & node_modules/.bin/wait-on http://localhost:3000 && yarn cypress:run"
-  },
-  "dependencies": {
-    "axios": "0.18.0",
-    "formik": "1.5.5",
-    "js-cookie": "2.2.0",
-    "nanoid": "2.0.3",
-    "ramda": "0.26.1",
-    "react": "16.7.0-alpha.2",
-    "react-cache": "2.0.0-alpha.1",
-    "react-dom": "16.7.0-alpha.2",
-    "react-router-dom": "5.0.0",
-    "react-scripts": "3.0.1",
-    "serve": "11.0.0",
-    "styled-components": "4.2.0",
-    "styled-is": "1.3.0",
-    "wait-on": "3.2.0",
-    "yup": "0.27.0"
+    "format": "prettier --write '*/**/*.{ts,tsx,css,md,json}'",
+    "lint:css": "stylelint '**/*.{ts,tsx}'",
+    "lint:ts": "eslint --ext .ts,.tsx src",
+    "heroku-postbuild": "npm run build",
+    "start": "node node_modules/.bin/serve -s build"
   },
   "devDependencies": {
-    "@types/axios": "0.14.0",
-    "@types/jquery": "3.3.29",
-    "@types/js-cookie": "2.2.2",
-    "@types/nanoid": "1.2.1",
-    "@types/node": "12.0.1",
-    "@types/ramda": "0.26.8",
-    "@types/react": "16.7.11",
-    "@types/react-cache": "2.0.1",
-    "@types/react-dom": "16.0.11",
-    "@types/react-router-dom": "4.3.3",
-    "@types/styled-components": "4.1.15",
-    "@types/webpack-env": "1.13.9",
-    "@types/yup": "0.26.13",
-    "cypress": "3.2.0",
-    "husky": "2.3.0",
-    "lint-staged": "8.1.6",
-    "prettier": "1.17.0",
-    "stylelint": "10.0.1",
-    "stylelint-config-standard": "18.3.0",
-    "stylelint-config-styled-components": "0.1.1",
-    "stylelint-processor-styled-components": "1.7.0",
-    "tslint": "5.16.0",
-    "typescript": "3.4.5"
-  },
-  "greenkeeper": {
-    "ignore": [
-      "react",
-      "@types/react",
-      "react-dom",
-      "@types/react-dom",
-      "react-cache",
-      "@types/react-cache"
-    ]
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "prettier  --write",
-      "git add"
-    ],
-    "*.{json,css,md}": [
-      "prettier  --write",
-      "git add"
-    ]
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "@code-quality/commitlint-config": "^1.1.0",
+    "@code-quality/eslint-config-jest": "^1.1.0",
+    "@code-quality/eslint-config-react": "^1.7.0",
+    "@code-quality/eslint-config-typescript": "^1.6.0",
+    "@code-quality/prettier-config": "^2.1.0",
+    "@code-quality/stylelint-styled-components-config": "^1.1.0",
+    "@commitlint/cli": "^8.3.5",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^8.1.0",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.0",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^4.4.2",
+    "@types/webpack-env": "^1.15.1",
+    "cypress": "^4.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.1",
+    "jest-styled-components": "^7.0.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "stylelint": "^13.1.0",
+    "stylelint-config-prettier": "^8.0.1"
+  }
 }
