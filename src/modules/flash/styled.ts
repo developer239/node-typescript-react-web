@@ -23,7 +23,6 @@ export const Message = styled.div<{
   opacity: 0.9;
   margin-top: 1.25rem;
   border-radius: 0.125rem;
-
   ${is('isSuccess')`
     background-color: #308732;
   `}
