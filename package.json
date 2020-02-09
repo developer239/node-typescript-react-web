@@ -9,6 +9,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.1",
     "sanitize.css": "^11.0.0",
+    "serve": "^11.3.0",
     "styled-components": "^5.0.1",
     "typescript": "~3.7.2"
   },
@@ -20,7 +21,9 @@
     "cypress:run": "node_modules/.bin/cypress run",
     "format": "prettier --write '*/**/*.{ts,tsx,css,md,json}'",
     "lint:css": "stylelint '**/*.{ts,tsx}'",
-    "lint:ts": "eslint --ext .ts,.tsx src"
+    "lint:ts": "eslint --ext .ts,.tsx src",
+    "heroku-postbuild": "npm run build",
+    "start": "node node_modules/.bin/serve -s build"
   },
   "devDependencies": {
     "@code-quality/commitlint-config": "^1.1.0",
