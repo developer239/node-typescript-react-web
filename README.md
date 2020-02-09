@@ -1,5 +1,6 @@
 ![cypress](https://github.com/developer239/node-typescript-react-web/workflows/cypress/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6d7b91d3589966a95878/maintainability)](https://codeclimate.com/github/developer239/node-typescript-react-web/maintainability)
+[![Dependabot](https://badgen.net/dependabot/developer239/node-typescript-react-web/166889445?icon=dependabot)](https://dependabot.com/)
 [![TypeScript](https://badges.frapsoft.com/typescript/version/typescript-next.svg?v=101)](https://www.typescriptlang.org/)
 
 ## Node Typescript React Web
