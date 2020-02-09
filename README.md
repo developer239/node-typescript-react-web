@@ -1,19 +1,22 @@
+![cypress](https://github.com/developer239/node-typescript-react-web/workflows/cypress/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6d7b91d3589966a95878/maintainability)](https://codeclimate.com/github/developer239/node-typescript-react-web/maintainability)
 [![TypeScript](https://badges.frapsoft.com/typescript/version/typescript-next.svg?v=101)](https://www.typescriptlang.org/)
 
 ## Node Typescript React Web
 
-System Dependencies:
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-1. `brew install node`
-2. `brew install yarn`
+Demo application is running [here](https://node-typescript-react-web.herokuapp.com).
 
-Run React App:
+📘 Backend API is running [here](https://node-typescript-api.herokuapp.com/). You can find the source code of the backend application [here](https://github.com/developer239/node-typescript-api).
 
-1. Start development server: `yarn dev`
+## Development
+
+1. Install dependencies: `yarn install`
+2. Start development server: `yarn dev`
 
 ## Useful Commands
 
-- `yarn dev` Start development server
 - `yarn format` Prettify source code
 - `yarn lint:ts` Show ts errors
 - `yarn lint:css` Show css errors
