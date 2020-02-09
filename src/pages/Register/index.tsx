@@ -1,6 +1,6 @@
 import React, { FC, useContext } from 'react'
 import { RouteComponentProps } from 'react-router-dom'
-import RegisterForm from 'modules/auth/forms/Register'
+import { RegisterForm } from 'modules/auth/forms/Register'
 import { IFormValues } from 'modules/auth/forms/Register/types'
 import { AuthContext } from 'modules/auth/context'
 import { useFetcher } from 'hooks/useFetcher'

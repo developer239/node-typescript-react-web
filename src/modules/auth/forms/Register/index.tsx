@@ -6,7 +6,7 @@ import { Button } from 'components/Button'
 import { validationSchema, onSubmit, initialValues } from './config'
 import { IProps, IFormValues } from './types'
 
-export const LoginForm: FC<IProps> = props => (
+export const RegisterForm: FC<IProps> = props => (
   <Formik
     initialValues={initialValues()}
     validationSchema={validationSchema}

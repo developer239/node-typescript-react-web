@@ -1,7 +1,7 @@
 import React, { FunctionComponent, InputHTMLAttributes } from 'react'
 import { FormikErrors } from 'formik'
 import { Row, Column } from '../../Grid'
-import Description from '../../Description'
+import { Description } from '../../Description'
 
 interface IProps extends InputHTMLAttributes<HTMLInputElement> {
   error?: FormikErrors<string | boolean>

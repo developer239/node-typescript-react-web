@@ -5,6 +5,7 @@ export const breakPoints = {
 }
 
 export const mq = {
+  md: `@media (min-width: ${breakPoints.md})`,
   lg: `@media (min-width: ${breakPoints.lg})`,
   xl: `@media (min-width: ${breakPoints.xl})`,
 }

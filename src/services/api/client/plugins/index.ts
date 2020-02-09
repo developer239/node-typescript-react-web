@@ -1,5 +1,5 @@
 import { AxiosError, AxiosRequestConfig } from 'axios'
-import { path } from 'ramda'
+import R from 'ramda'
 import { authStorage } from 'services/authStorage'
 import * as authApi from 'modules/auth/api'
 import { config } from 'config'
@@ -14,7 +14,7 @@ export const prefixApiUrl = (requestConfig: AxiosRequestConfig) => {
 
 export const refreshAuthToken = async (error: AxiosError) => {
   const originalRequest = error.config as IExtendedAxiosConfig
-  const userId = path(['id'], authStorage.getUser())
+  const userId = R.path<string>(['id'], authStorage.getUser())
   const refreshToken = authStorage.getRefreshToken()
 
   if (

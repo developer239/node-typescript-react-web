@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import AuthContext from 'modules/auth/context'
+import { AuthContext } from 'modules/auth/context'
 
 export const Header = () => {
   const {

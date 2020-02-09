@@ -3,7 +3,7 @@ import { RouteComponentProps } from 'react-router-dom'
 import { PasswordResetForm } from 'modules/auth/forms/PasswordReset'
 import { IFormValues } from 'modules/auth/forms/PasswordReset/types'
 import { AuthContext } from 'modules/auth/context'
-import { FLashMessagesContext } from 'modules/flash/context'
+import { FlashMessagesContext } from 'modules/flash/context'
 import { useFetcher } from 'hooks/useFetcher'
 import * as authApi from 'modules/auth/api'
 import { searchParams } from 'utils'
@@ -13,7 +13,7 @@ export const PasswordResetPage: FC<RouteComponentProps> = ({
   location: { search },
 }) => {
   const authContext = useContext(AuthContext)
-  const flashContext = useContext(FLashMessagesContext)
+  const flashContext = useContext(FlashMessagesContext)
   const [postData] = useFetcher()
 
   const token = searchParams('token', search)
