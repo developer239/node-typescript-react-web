@@ -1,5 +1,5 @@
 import { AxiosError, AxiosRequestConfig } from 'axios'
-import R from 'ramda'
+import * as R from 'ramda'
 import { authStorage } from 'services/authStorage'
 import * as authApi from 'modules/auth/api'
 import { config } from 'config'
